@@ -62,7 +62,7 @@ class MusicLibraryController
   end
 
   def list_songs_by_artist
-
+    gets
     puts("Please enter the name of an artist:")
     @artist_n = gets
     binding.pry
