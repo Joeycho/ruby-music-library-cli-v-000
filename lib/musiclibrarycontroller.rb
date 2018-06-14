@@ -9,6 +9,6 @@ class MusicLibraryController
     while gets != "exit"
         path = gets
     end
-  
+
   end
 end
