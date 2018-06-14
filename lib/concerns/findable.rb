@@ -1,3 +1,3 @@
 module Concerns
-  module 
+  module
 end
