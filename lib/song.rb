@@ -20,7 +20,6 @@ class Song
 #    binding.pry
     if genre == nil
       return nil
-
     elsif genre.songs == nil
           genre.songs << self
     elsif genre.songs.include?(self)
