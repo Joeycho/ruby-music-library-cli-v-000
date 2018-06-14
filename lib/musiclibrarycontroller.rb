@@ -74,9 +74,10 @@ class MusicLibraryController
       |song| if song.artist.name = @artist_n
       puts "#{i+1}. #{song.artist.name}"
       i +=1
+          end
     end
 
-    
+
   end
 
   def list_songs_by_genre
