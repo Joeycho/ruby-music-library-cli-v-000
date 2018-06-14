@@ -73,7 +73,7 @@ class MusicLibraryController
 
     narr.each do
       |song| if song.artist.name == @artist_n
-      puts "#{i+1}. #{song.artist.name}"
+      puts "#{i+1}. #{song.name} - #{song.genre.name}"
       i +=1
       end
     end
