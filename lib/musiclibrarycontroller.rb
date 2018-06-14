@@ -72,7 +72,7 @@ class MusicLibraryController
     #    binding.pry
 
     narr.each do
-      |song| if song.artist.name = @artist_n
+      |song| if song.artist.name = gets
       puts "#{i+1}. #{song.artist.name}"
       i +=1
       end
