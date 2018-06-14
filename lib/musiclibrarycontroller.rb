@@ -26,6 +26,7 @@ class MusicLibraryController
     narr = Song.all.sort do
           |sone, stwo| sone.name <=> stwo.name
         end
+        binding.pry
 
     narr.each do
       |song| "#{i+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
