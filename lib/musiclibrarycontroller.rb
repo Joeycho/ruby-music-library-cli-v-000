@@ -49,6 +49,16 @@ class MusicLibraryController
   end
 
   def list_genres
+    i = 0
+    narr = Genre.all.sort do
+          |sone, stwo| sone.name <=> stwo.name
+        end
+    #    binding.pry
+
+    narr.each do
+      |song| puts "#{i+1}. #{song.genre.name}"
+      i +=1
+    end
   end
 
   def list_songs_by_artist
