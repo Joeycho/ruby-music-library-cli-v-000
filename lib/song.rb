@@ -62,9 +62,8 @@ class Song
     song =self.new(name)
     song.save
     song
-  #  binding.pry
   end
 
 
-  
+
 end
