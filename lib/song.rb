@@ -12,6 +12,7 @@ class Song
 
     self.genre = genre
     self.artist = artist
+    binding.pry
 
   end
 
