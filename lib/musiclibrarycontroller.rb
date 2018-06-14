@@ -107,7 +107,7 @@ class MusicLibraryController
       #    binding.pry
       if narr['#{song_n}'.to_i-1]!=nil
       puts("Playing #{narr['#{song_n}'.to_i-1].name} by #{narr['#{song_n}'.to_i-1].artist.name}")
-      
+      end
     end
 
   end
