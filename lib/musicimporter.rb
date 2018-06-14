@@ -10,6 +10,9 @@ class MusicImporter
  end
   end
 
-  def self.import
+  def import
+  self.files.map do
+    |filename| Song.new_by_filename(filename)
+  end
   end
 end
