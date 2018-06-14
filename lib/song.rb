@@ -17,11 +17,11 @@ class Song
   end
 
   def genre=(genre)
-    if genre == nil       
+    if genre == nil
       genre.songs << self
     elsif genre.songs.include?(self)
-      genre.songs << self
     else
+      genre.songs << self
     end
 #    binding.pry
     @genre = genre
