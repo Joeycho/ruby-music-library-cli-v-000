@@ -105,13 +105,9 @@ class MusicLibraryController
             |sone, stwo| sone.name <=> stwo.name
           end
       #    binding.pry
-
-      narr.each do
-        |song| if song.genre.name == @genre_n
-        puts "#{i+1}. #{song.artist.name} - #{song.name}"
-        i +=1
-        end
-      end
+      if narr['#{song_n}'.to_i-1]!=nil
+      puts("Playing #{narr['#{song_n}'.to_i-1].name} by #{narr['#{song_n}'.to_i-1].artist.name}")
+      
     end
 
   end
