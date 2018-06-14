@@ -21,7 +21,7 @@ class Song
     else
     genre.songs << self
     end
-    binding.pry
+#    binding.pry
     @genre = genre
   end
 
