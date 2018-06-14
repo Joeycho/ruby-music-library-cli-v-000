@@ -62,10 +62,13 @@ class MusicLibraryController
   end
 
   def list_songs_by_artist
-    @artist_n = gets
+    gets
 
     puts("Please enter the name of an artist:")
 
+    gets
+
+    @artist_n = gets
 
     i = 0
     narr = Song.all.sort do
