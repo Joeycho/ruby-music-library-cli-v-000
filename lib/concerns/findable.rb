@@ -1,3 +1,5 @@
-#module Concerns
-#  module
-#end
+module Concerns
+  module Findable
+    
+  end
+end
