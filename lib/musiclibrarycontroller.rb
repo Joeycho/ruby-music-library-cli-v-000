@@ -22,6 +22,10 @@ class MusicLibraryController
   end
 
   def list_songs
+    arr = Song.all.map do
+      |song| song.name
+    end
+    arr.sort
   end
 
   def list_artists
@@ -36,5 +40,5 @@ class MusicLibraryController
   def play_song
 
   end
-  
+
 end
