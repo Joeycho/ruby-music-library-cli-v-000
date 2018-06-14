@@ -6,7 +6,8 @@ class MusicLibraryController
 
   def call
     puts "Welcome to your music library!"
-    while gets != "exit"
+    path=""
+    while path != "exit"
         path = gets
     end
 
