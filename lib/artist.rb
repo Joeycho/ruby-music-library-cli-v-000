@@ -49,7 +49,7 @@ class Artist
       genres =self.songs.map do
         |song| song.genre
       end
-      binding.pry
+    #  binding.pry
       genres.uniq
     end
 
