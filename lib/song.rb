@@ -10,7 +10,10 @@ class Song
   def initialize(name, artist=nil, genre=nil)
     @name = name
 
+    if genre != nil
     self.genre = genre
+
+    if artist != nil
     self.artist = artist
   #  binding.pry
 
