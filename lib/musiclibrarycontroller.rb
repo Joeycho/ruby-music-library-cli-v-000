@@ -29,7 +29,7 @@ class MusicLibraryController
         binding.pry
 
     narr.each do
-      |song| "#{i+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+      |song| puts "#{i+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
       i +=1
     end
 
