@@ -14,7 +14,7 @@ class MusicImporter
 
   def import
   self.files.map do
-    |filename| Song.new_from_filename(filename)
+    |filename| Song.create_from_filename(filename)
   end
   end
 end
