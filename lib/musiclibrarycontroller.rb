@@ -66,6 +66,7 @@ class MusicLibraryController
     puts("Please enter the name of an artist:")
     @artist_n="Testing for #puts"
     while @artist_n != "Testing for #puts"
+    puts("Please enter the name of an artist:")  
       @artist_n = gets
     end
     i = 0
