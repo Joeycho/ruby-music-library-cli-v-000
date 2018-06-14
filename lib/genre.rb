@@ -35,6 +35,11 @@ class Genre
   end
 
   def artists
+    artists =self.songs.map do
+      |song| song.artist
+    end
+    artists.uniq
+
   end
-  
+
 end
