@@ -2,13 +2,7 @@ class MusicLibraryController
   def initialize(path='./db/mp3s')
     @path = path
     MusicImporter.new(@path).import
-
-    self.list_songs
-    self.list_artists
-    self.list_songs_by_artist
-    self.list_songs_by_genre
-    self.play_song
-  end
+    end
 
   def call
     puts "Welcome to your music library!"
@@ -23,6 +17,20 @@ class MusicLibraryController
     path=""
     while path != "exit"
         path = gets
+        if path =='list songs'
+        self.list_songs
+      elsif path =='list artists'
+        self.list_artists
+      elsif path =='list genres'
+        self.list_genres
+      elsif path =='list artist'
+        self.list_songs_by_artist
+      elsif path =='list genre'
+        self.list_songs_by_genre
+      else path == 'play song'
+        self.play_song
+      end
+
     end
 
   end
