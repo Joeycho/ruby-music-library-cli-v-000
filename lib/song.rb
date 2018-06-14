@@ -17,7 +17,7 @@ class Song
   end
 
   def genre=(genre)
-    binding.pry
+#    binding.pry
     if genre == nil
       return nil
 
