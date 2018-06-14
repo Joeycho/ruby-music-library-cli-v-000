@@ -28,7 +28,8 @@ class MusicLibraryController
         end
     
     narr.each do
-      |song| "#{i+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}" i++
+      |song| "#{i+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+      i +=1
     end
     
   end
