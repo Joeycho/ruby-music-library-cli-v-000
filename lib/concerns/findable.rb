@@ -2,6 +2,7 @@ module Concerns
   module Findable
 
     def self.find_by_name(name)
+      binding.pry
       self.all.detect do
         |song| song.name == name
       end
