@@ -70,7 +70,7 @@ class MusicLibraryController
     narr = Song.all.sort do
           |sone, stwo| sone.name <=> stwo.name
         end
-    #    binding.pry
+        binding.pry
 
     narr.each do
       |song| if song.artist.name = @artist_n
