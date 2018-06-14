@@ -27,8 +27,9 @@ class MusicLibraryController
         self.list_songs_by_artist
       elsif path =='list genre'
         self.list_songs_by_genre
-      else path == 'play song'
+      elsif path == 'play song'
         self.play_song
+      else
       end
 
     end
