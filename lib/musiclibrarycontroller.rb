@@ -106,8 +106,9 @@ class MusicLibraryController
       narr = Song.all.sort do
             |sone, stwo| sone.name <=> stwo.name
           end
-        #  binding.pry
+        
       if @song_n.to_i >0 && @song_n.to_i < narr.length
+          binding.pry
       puts("Playing #{narr['#{@song_n}'.to_i-1].name} by #{narr['#{@song_n}'.to_i-1].artist.name}")
       end
     end
