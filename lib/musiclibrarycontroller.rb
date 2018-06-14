@@ -25,6 +25,7 @@ class MusicLibraryController
     i = 0
     arr = Song.all.map do
       |song| puts "#{i+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+      i++
     end
     arr.sort
   end
