@@ -112,9 +112,12 @@ class MusicLibraryController
       puts("Playing #{narr[@song_n.to_i-1].name} by #{narr[@song_n.to_i-1].artist.name}")
       end
     end
+    list_songs
+    list_artists
+    list_songs_by_artist
+    list_songs_by_genre
+    play_song
+
+    
 end
-list_songs
-list_artists
-list_songs_by_artist
-list_songs_by_genre
-play_song
+
