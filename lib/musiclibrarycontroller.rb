@@ -2,6 +2,12 @@ class MusicLibraryController
   def initialize(path='./db/mp3s')
     @path = path
     MusicImporter.new(@path).import
+
+    self.list_songs
+    self.list_artists
+    self.list_songs_by_artist
+    self.list_songs_by_genre
+    self.play_song
   end
 
   def call
@@ -112,12 +118,4 @@ class MusicLibraryController
       puts("Playing #{narr[@song_n.to_i-1].name} by #{narr[@song_n.to_i-1].artist.name}")
       end
     end
-    list_songs
-    list_artists
-    list_songs_by_artist
-    list_songs_by_genre
-    play_song
-
-    
 end
-
