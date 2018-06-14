@@ -33,4 +33,8 @@ class Genre
     genre
   #  binding.pry
   end
+
+  def artists
+  end
+  
 end
