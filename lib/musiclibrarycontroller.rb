@@ -23,15 +23,15 @@ class MusicLibraryController
 
   def list_songs
     i = 0
-    narr = Song.all.select do
+    narr = Song.all.sort do
           |sone, stwo| sone.name <=> stwo.name
         end
-    
+
     narr.each do
       |song| "#{i+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
       i +=1
     end
-    
+
   end
 
   def list_artists
