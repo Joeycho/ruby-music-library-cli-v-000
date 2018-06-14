@@ -64,7 +64,7 @@ class MusicLibraryController
   def list_songs_by_artist
 
     puts("Please enter the name of an artist:")
-    
+    @artist_n = gets
     i = 0
     narr = Song.all.sort do
           |sone, stwo| sone.name <=> stwo.name
