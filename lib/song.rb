@@ -12,9 +12,11 @@ class Song
 
     if genre != nil
     self.genre = genre
+    end
 
     if artist != nil
     self.artist = artist
+    end
   #  binding.pry
 
   end
