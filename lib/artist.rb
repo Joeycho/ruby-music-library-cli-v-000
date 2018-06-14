@@ -40,8 +40,6 @@ class Artist
     end
 
     self.songs << song
-    song.class.all << song
-
     end
 
     def genres
