@@ -66,7 +66,7 @@ class MusicLibraryController
 
     puts("Please enter the name of an artist:")
 
-    
+
     i = 0
     narr = Song.all.sort do
           |sone, stwo| sone.name <=> stwo.name
