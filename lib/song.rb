@@ -17,7 +17,7 @@ class Song
   end
 
   def genre=(genre)
-    if genre.songs.include?(self)
+    if genre.songs != nil || genre.songs.include?(self)
     else
     genre.songs << self
     end
